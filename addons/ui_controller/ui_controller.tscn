@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7tm7sw76g2kl"]
+
+[ext_resource type="Script" uid="uid://dbqfw42rkrcne" path="res://addons/ui_controller/ui_controller.gd" id="1_jlcii"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_jlcii")
