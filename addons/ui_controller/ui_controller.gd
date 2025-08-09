@@ -3,12 +3,12 @@ extends Node
 var _ui_node: Node
 var _ui_ref: Array[String]
 
-@export var menus: Dictionary[String, PackedScene]
+@export var _menus: Dictionary[String, PackedScene]
 
 func open_menu(menu_name: String) -> void:
 	_clear_menu_mem()
 	_ui_ref.push_back(menu_name)
-	_ui_node.add_child(menus[menu_name].instantiate())
+	_ui_node.add_child(_menus[menu_name].instantiate())
 
 func close_menu() -> void:
 	_clear_menu_mem()

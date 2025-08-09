@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Godot Plugin Ui Controller"
+run/main_scene="uid://bmm5bcpxbnti5"
 config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://addons/ui_controller/icon.svg"
 
@@ -21,6 +22,13 @@ UiController="*res://addons/ui_controller/ui_controller.gd"
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/ui_controller/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://addons/": "purple",
+"res://example/": "teal"
+}
 
 [rendering]
 

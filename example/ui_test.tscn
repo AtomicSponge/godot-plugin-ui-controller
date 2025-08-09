@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmm5bcpxbnti5"]
+
+[ext_resource type="Script" uid="uid://c04d0wna1d7j1" path="res://example/ui_test.gd" id="1_1333m"]
+[ext_resource type="Script" uid="uid://cmfgtkrms7cw8" path="res://addons/ui_controller/ui_anchor.gd" id="2_klvhq"]
+
+[node name="UiTest" type="Node2D"]
+script = ExtResource("1_1333m")
+
+[node name="UiAnchor" type="Node" parent="."]
+script = ExtResource("2_klvhq")
+metadata/_custom_type_script = "uid://cmfgtkrms7cw8"

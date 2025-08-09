@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7tm7sw76g2kl"]
+[gd_scene load_steps=3 format=3 uid="uid://b7tm7sw76g2kl"]
 
 [ext_resource type="Script" uid="uid://dbqfw42rkrcne" path="res://addons/ui_controller/ui_controller.gd" id="1_jlcii"]
+[ext_resource type="PackedScene" uid="uid://bvqmvqphbks60" path="res://example/menus/main_menu.tscn" id="2_0lmfu"]
 
 [node name="UiController" type="Node"]
 script = ExtResource("1_jlcii")
+_menus = Dictionary[String, PackedScene]({
+"MainMenu": ExtResource("2_0lmfu")
+})
