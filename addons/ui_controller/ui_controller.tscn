@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" uid="uid://dbqfw42rkrcne" path="res://addons/ui_controller/ui_controller.gd" id="1_jlcii"]
 
-[node name="Node" type="Node"]
+[node name="UiController" type="Node"]
 script = ExtResource("1_jlcii")
