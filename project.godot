@@ -17,7 +17,7 @@ config/icon="res://addons/ui_controller/icon.svg"
 
 [autoload]
 
-UiController="*res://addons/ui_controller/ui_controller.gd"
+UiController="*res://addons/ui_controller/ui_controller.tscn"
 
 [editor_plugins]
 

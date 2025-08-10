@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://bvqmvqphbks60"]
+[gd_scene load_steps=2 format=3 uid="uid://bvqmvqphbks60"]
+
+[ext_resource type="Script" uid="uid://bjl5wn31wqqg7" path="res://example/menus/scripts/main_menu.gd" id="1_ox1su"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ox1su")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -27,8 +30,20 @@ text = "Menu A"
 
 [node name="MenuBButton" type="Button" parent="."]
 layout_mode = 0
+offset_left = 537.0
+offset_top = 259.0
+offset_right = 605.0
+offset_bottom = 290.0
+text = "Menu B"
+
+[node name="MenuCButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 538.0
-offset_top = 260.0
-offset_right = 601.0
-offset_bottom = 291.0
-text = "MenuB"
+offset_top = 315.0
+offset_right = 605.0
+offset_bottom = 346.0
+text = "Menu C"
+
+[connection signal="pressed" from="MenuAButton" to="." method="_on_menu_a_button_pressed"]
+[connection signal="pressed" from="MenuBButton" to="." method="_on_menu_b_button_pressed"]
+[connection signal="pressed" from="MenuCButton" to="." method="_on_menu_c_button_pressed"]
