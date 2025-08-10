@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://6k0mdmfwadne"]
+[gd_scene load_steps=2 format=3 uid="uid://6k0mdmfwadne"]
+
+[ext_resource type="Script" uid="uid://dml70x1wa7kld" path="res://example/menus/scripts/menu_a.gd" id="1_o6thb"]
 
 [node name="MenuA" type="Control"]
 layout_mode = 3
@@ -7,3 +9,41 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_o6thb")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 24.0
+offset_right = 666.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 64
+text = "Menu A"
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 576.0
+offset_right = 100.0
+offset_bottom = 607.0
+text = "Back"
+
+[node name="ASub1Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 296.0
+offset_right = 526.0
+offset_bottom = 356.0
+text = "A Sub 1"
+
+[node name="ASub2Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 572.0
+offset_top = 296.0
+offset_right = 722.0
+offset_bottom = 358.0
+text = "A Sub 2"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="ASub1Button" to="." method="_on_a_sub_1_button_pressed"]
+[connection signal="pressed" from="ASub2Button" to="." method="_on_a_sub_2_button_pressed"]

@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://bgx0mqqr7hoag"]
+[gd_scene load_steps=2 format=3 uid="uid://bgx0mqqr7hoag"]
+
+[ext_resource type="Script" uid="uid://bupd5c3eblriw" path="res://example/menus/scripts/menu_b.gd" id="1_gm741"]
 
 [node name="MenuB" type="Control"]
 layout_mode = 3
@@ -7,3 +9,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gm741")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 236.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 64
+text = "Menu B"
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 55.0
+offset_top = 576.0
+offset_right = 100.0
+offset_bottom = 607.0
+text = "Back"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://8db0bt8kjha4"]
+[gd_scene load_steps=2 format=3 uid="uid://8db0bt8kjha4"]
+
+[ext_resource type="Script" uid="uid://cm3hamt8bsf0k" path="res://example/menus/scripts/menu_a_2.gd" id="1_eys6q"]
 
 [node name="MenuA2" type="Control"]
 layout_mode = 3
@@ -7,3 +9,20 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_eys6q")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 498.0
+offset_top = 269.0
+offset_right = 567.0
+offset_bottom = 292.0
+text = "Menu A2"
+
+[node name="CloseButton" type="Button" parent="."]
+offset_left = 506.0
+offset_top = 311.0
+offset_right = 556.0
+offset_bottom = 342.0
+text = "Close"
+
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

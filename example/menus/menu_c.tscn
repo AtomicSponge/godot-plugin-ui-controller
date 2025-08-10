@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dx3426lok6jwa"]
+[gd_scene load_steps=2 format=3 uid="uid://dx3426lok6jwa"]
+
+[ext_resource type="Script" uid="uid://cl8w4fo8fv2e1" path="res://example/menus/scripts/menu_c.gd" id="1_lamg1"]
 
 [node name="MenuC" type="Control"]
 layout_mode = 3
@@ -7,3 +9,21 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_lamg1")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 916.0
+offset_top = 3.0
+offset_right = 1152.0
+offset_bottom = 91.0
+theme_override_font_sizes/font_size = 64
+text = "Menu C"
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 55.0
+offset_top = 576.0
+offset_right = 100.0
+offset_bottom = 607.0
+text = "Back"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
