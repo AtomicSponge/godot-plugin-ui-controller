@@ -1,1 +1,6 @@
-export-ignore example project.godot
+example export-ignore
+project.godot export-ignore
+.gitattributes export-ignore
+.gitignote export-ignore
+README.md export-ignore
+LICENCE.md export-ignore
