@@ -22,6 +22,11 @@ func close_menu() -> void:
 	if not _ui_ref.is_empty():
 		_ui_node.add_child(_menus[_ui_ref.back()].instantiate())
 
+## Closes all menus and clears the stack.
+func close_all_menus() -> void:
+	_clear_menu_mem()
+	_ui_ref.clear()
+
 func _clear_menu_mem() -> void:
 	for node in _ui_node.get_children():
 		_ui_node.remove_child(node)
