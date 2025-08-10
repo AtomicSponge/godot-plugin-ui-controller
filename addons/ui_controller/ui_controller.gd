@@ -6,14 +6,16 @@ var _ui_ref: Array[String]
 
 @export var _menus: Dictionary[String, PackedScene]
 
-## Opensa menu.
+## Opens a menu.
 ## Takes a string name of a menu scene and attaches it to the UiAnchor node.
+## Also adds it to the stack of open menus.
 func open_menu(menu_name: String) -> void:
 	_clear_menu_mem()
 	_ui_ref.push_back(menu_name)
 	_ui_node.add_child(_menus[menu_name].instantiate())
 
-## Close menu
+## Closes a menu.
+## Will open the previous menu if any are left in the stack.
 func close_menu() -> void:
 	_clear_menu_mem()
 	_ui_ref.pop_back()
