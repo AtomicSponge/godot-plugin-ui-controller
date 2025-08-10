@@ -14,7 +14,7 @@ func close_menu() -> void:
 	_clear_menu_mem()
 	_ui_ref.pop_back()
 	if not _ui_ref.is_empty():
-		open_menu(_ui_ref.back())
+		_ui_node.add_child(_menus[_ui_ref.back()].instantiate())
 
 func _clear_menu_mem() -> void:
 	for node in _ui_node.get_children():
