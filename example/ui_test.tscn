@@ -1,11 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmm5bcpxbnti5"]
+[gd_scene load_steps=9 format=3 uid="uid://bmm5bcpxbnti5"]
 
 [ext_resource type="Script" uid="uid://c04d0wna1d7j1" path="res://example/ui_test.gd" id="1_1333m"]
 [ext_resource type="Script" uid="uid://cmfgtkrms7cw8" path="res://addons/ui_controller/ui_anchor.gd" id="2_klvhq"]
+[ext_resource type="PackedScene" uid="uid://bvqmvqphbks60" path="res://example/menus/main_menu.tscn" id="3_hlwpx"]
+[ext_resource type="PackedScene" uid="uid://uptgptcxemd5" path="res://example/menus/menu_a1.tscn" id="4_ry2k4"]
+[ext_resource type="PackedScene" uid="uid://8db0bt8kjha4" path="res://example/menus/menu_a2.tscn" id="5_3iy7u"]
+[ext_resource type="PackedScene" uid="uid://6k0mdmfwadne" path="res://example/menus/menu_a.tscn" id="6_1ll3k"]
+[ext_resource type="PackedScene" uid="uid://bgx0mqqr7hoag" path="res://example/menus/menu_b.tscn" id="7_dekgs"]
+[ext_resource type="PackedScene" uid="uid://dx3426lok6jwa" path="res://example/menus/menu_c.tscn" id="8_bdlsu"]
 
 [node name="UiTest" type="Node2D"]
 script = ExtResource("1_1333m")
 
 [node name="UiAnchor" type="Node" parent="."]
 script = ExtResource("2_klvhq")
+_menus = Dictionary[String, PackedScene]({
+"MainMenu": ExtResource("3_hlwpx"),
+"MenuA": ExtResource("6_1ll3k"),
+"MenuA1": ExtResource("4_ry2k4"),
+"MenuA2": ExtResource("5_3iy7u"),
+"MenuB": ExtResource("7_dekgs"),
+"MenuC": ExtResource("8_bdlsu")
+})
 metadata/_custom_type_script = "uid://cmfgtkrms7cw8"
