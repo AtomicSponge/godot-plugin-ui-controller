@@ -1,6 +1,5 @@
 extends Control
 
-
 func _on_menu_a_button_pressed() -> void:
 	UiController.open_menu("MenuA")
 
