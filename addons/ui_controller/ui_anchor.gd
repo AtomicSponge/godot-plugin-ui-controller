@@ -1,4 +1,5 @@
 extends Node
+class_name UiAnchor
 ## A node that the UiController will anchor menus to.
 ##
 ## Before calling the UiController members this node needs to be
