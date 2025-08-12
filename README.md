@@ -9,7 +9,7 @@ Under the hood it will instantiate each loaded menu (scene) when it is called an
 
 See the included example project for a more in depth usage guide.
 
-### API Reference
+## API Reference
 - `UiController.open_menu("MenuName")`:  Opens the menu with the given key name.
 
 - `UiController.close_menu()`:  Closes the current menu and will open the top menu of the stack if one exists.
