@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bmm5bcpxbnti5"]
 
 [ext_resource type="Script" uid="uid://c04d0wna1d7j1" path="res://example/ui_test.gd" id="1_1333m"]
-[ext_resource type="Script" uid="uid://cmfgtkrms7cw8" path="res://addons/ui_controller/ui_anchor.gd" id="2_klvhq"]
+[ext_resource type="Script" uid="uid://bflhf54ooemil" path="res://addons/ui_controller/ui_anchor.gd" id="2_klvhq"]
 [ext_resource type="PackedScene" uid="uid://bvqmvqphbks60" path="res://example/menus/main_menu.tscn" id="3_hlwpx"]
 [ext_resource type="PackedScene" uid="uid://uptgptcxemd5" path="res://example/menus/menu_a1.tscn" id="4_ry2k4"]
 [ext_resource type="PackedScene" uid="uid://8db0bt8kjha4" path="res://example/menus/menu_a2.tscn" id="5_3iy7u"]
@@ -22,4 +22,3 @@ _menus = Dictionary[String, PackedScene]({
 "MenuB": ExtResource("7_dekgs"),
 "MenuC": ExtResource("8_bdlsu")
 })
-metadata/_custom_type_script = "uid://cmfgtkrms7cw8"
